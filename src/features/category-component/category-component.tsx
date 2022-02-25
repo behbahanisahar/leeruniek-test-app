@@ -17,9 +17,9 @@ const CategoryAcardionComponent = ({ category }: Props): ReactElement => {
   return (
     <>
       <Accordion
-        style={{margin:"5%"}}
+        style={{ margin: "5%" }}
         expanded={
-          category?.note !== undefined || category?.subCategories !== undefined
+          category?.note !== undefined || category?.subCategories !== undefined //if the component doesn't have children should'nt be expanded
             ? expanded
             : false
         }
