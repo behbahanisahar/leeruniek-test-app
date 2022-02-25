@@ -1,3 +1,11 @@
+# Leeruniek Test App
+
+# About The App
+This project consist of nested data (Plan, Category, SubCategory) that presented with Accardion an the UI framework is Material UI.
+
+# Technologies
+I used React Framework,using TypeScript, Material UI.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
