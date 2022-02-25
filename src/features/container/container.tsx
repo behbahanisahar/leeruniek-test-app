@@ -1,5 +1,6 @@
 import CategoryItem from "entities/category-item";
 import { Card, CardBody } from "features/core-components/card";
+import PlanComponent from "features/plan-component/plan-component";
 import planMockData from "mock-data/plan-data";
 import { ReactElement } from "react";
 
@@ -22,10 +23,12 @@ const Container = (): ReactElement => {
   const sortedData = allData
     .sort((a, b) => (a.name > b.name ? 1 : b.name > a.name ? -1 : 0))
     .filter((s) => s.isArchived !== true); //sort alldata alphabetically and then filtered archieved data
-  console.log(sortedData);
+
   return (
     <Card className="m-5">
-      <CardBody></CardBody>
+      <CardBody>
+        <PlanComponent plan={planMockData.PLAN} allCategories={sortedData} />
+      </CardBody>
     </Card>
   );
 };
