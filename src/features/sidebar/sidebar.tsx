@@ -50,6 +50,9 @@ export const Sidebar = (props: Props): React.ReactElement => {
                 <div className="personnel-info">
                   <div className="username">Sahar Behbahani</div>
                 </div>
+                <div className="personnel-info">
+                  <div className="role">Front-End Developer</div>
+                </div>
                 <br />
               </div>
               <ul className="menu-nav py-1">

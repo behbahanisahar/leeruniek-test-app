@@ -17,14 +17,9 @@ interface Props {
 const PlanComponent = ({ plan, allCategories }: Props): ReactElement => {
   return (
     <>
-      <Card>
+          <Card style={{ width: "70%",margin:"5% 10%"}}>
         <CardActionArea>
-          <CardMedia
-            component="img"
-            // height="140"
-            image={logo}
-            alt="green iguana"
-          />
+                  <CardMedia component="img" style={{ width: "40%" }} image={logo} alt="green iguana" />
           <CardContent className="mx-5">
             <div className="h5">{plan.name}</div>
             <span className="text-muted">{plan.userCreated}</span>

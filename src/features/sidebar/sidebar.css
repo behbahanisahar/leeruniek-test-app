@@ -6,25 +6,6 @@
   min-height: 100vh !important;
 }
 
-.avatar-container {
-  position: block;
-  margin: 0 35%;
-  /* -webkit-transform: translateX(-50%); */
-}
-
-.avatar-container > img {
-  border-radius: 50%;
-  width: 70px;
-  height: 70px;
-}
-.avatar-container > span {
-  border-radius: 50%;
-  width: 70px;
-  height: 70px;
-  background: linear-gradient(135deg, #acb6e5, #86fde8);
-  color: #fff !important;
-}
-
 .username {
   font-size: 16px;
   font-weight: 400;
@@ -32,7 +13,7 @@
   color: #fff;
 }
 
-.emailaddress {
+.role {
   font-size: 13px;
   font-weight: 400;
   text-align: center;
@@ -51,12 +32,6 @@
   top: inherit !important;
 }
 
-.drawerHeader {
-  display: "flex";
-  align-items: center;
-  justify-content: flex-end;
-}
-
 .content {
   flex-grow: 1;
 }
@@ -71,20 +46,6 @@
   background: #1e1e2d;
 }
 
-.drawerOpen {
-  width: 265px !important;
-  flex-shrink: 0;
-}
-
-.drawerClose {
-  overflow-x: hidden;
-  width: 70px;
-}
-
-.drawerClose .info {
-  visibility: hidden;
-}
-
 .drawerClose > .MuiPaper-root {
   transform: initial !important;
   visibility: visible !important;
@@ -96,17 +57,6 @@
   margin: 0 15px;
 }
 
-.drawerClose .menu-text {
-  display: none !important;
-}
-
-.kt-aside__brand-aside-toggler--active > span:nth-child(1) {
-  display: none !important;
-}
-
-.kt-aside__brand-aside-toggler--active > span:nth-child(2) {
-  display: inline-block !important;
-}
 .menu-link {
   padding: 9px 20px;
 }
@@ -127,34 +77,6 @@
 }
 .aside {
   width: inherit !important;
-}
-.active .kt-menu__link-text {
-  color: #fff !important;
-}
-.drawerOpen .sidebar-footer {
-  color: #fff;
-  bottom: 0;
-  position: fixed;
-  padding: 20px 15px;
-
-  margin: 10px;
-  border-radius: 4px;
-  width: 245px;
-}
-.sidebar-footer .kt-menu__link-text {
-  color: #a2a3b7;
-}
-.drawerOpen .sidebar-footer:hover {
-  background-color: #1b1b28;
-}
-
-.drawerClose .sidebar-footer {
-  display: none;
-}
-.kt-media.kt-media--circle,
-.kt-media.kt-media--circle img,
-.kt-media.kt-media--circle span {
-  width: 80px;
 }
 
 @media (min-width: 992px) {
@@ -178,6 +100,11 @@
     padding-right: 70px !important;
   }
 }
+@media (max-width: 992px) {
+  .aside {
+    display: none !important;
+  }
+}
 .menu-item {
   color: rgb(97, 95, 95);
   list-style-type: none;
@@ -187,4 +114,7 @@
   list-style-type: none;
   background-color: #1b1b28;
   cursor: pointer;
+}
+.aside-menu {
+  margin: 10% auto;
 }
