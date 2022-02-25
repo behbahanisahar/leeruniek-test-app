@@ -25,7 +25,7 @@ const Container = (): ReactElement => {
     .filter((s) => s.isArchived !== true); //sort alldata alphabetically and then filtered archieved data
 
   return (
-    <Card className="m-5">
+    <Card className="m-5 w-80">
       <CardBody>
         <PlanComponent plan={planMockData.PLAN} allCategories={sortedData} />
       </CardBody>
