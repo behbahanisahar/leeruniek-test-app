@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+.d-block {
+  display: block !important;
+}
+.text-primary {
+  color: #f69a0f !important;
+}
+.text-secondary {
+  color: #2daae1 !important;
+}
+.text-muted{
+  color:#cfc7c7;
+  font-style: italic;
+}
