@@ -10,7 +10,7 @@ const Container = (): ReactElement => {
   ); //show the categories that has child note
   const allData: CategoryItem[] = planMockData.categories;
   const filteredData = allData.filter((f) => f.parentNoteCategoryId !== null); //filter data to find subCategories
-  allData.forEach((element: CategoryItem, index: any) => {
+  allData.forEach((element: CategoryItem, index: number) => {
     if (hasChildCategories.find((c) => c === element)) {
       allData[index].subCategories = filteredData.find((c) => c === element)
         ? planMockData.categories.filter((x) => x.id === element.id)[0]
